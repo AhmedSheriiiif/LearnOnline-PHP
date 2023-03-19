@@ -1,0 +1,359 @@
+html {
+    background-color: #bccad6;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.bar {
+    color: white;
+    background-color: #667292;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin: 8px 0px;
+}
+
+.bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: black;
+    background-color: #cfe0e8;
+}
+
+.bar-item-right {
+    padding: 8px 16px;
+    float: right;
+    width: auto;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 150px;
+    ;
+}
+
+.market-img {
+    width: 400px;
+}
+
+#footer {
+    position: absolute;
+    bottom: -300px;
+    width: 100%;
+}
+
+.page-button {
+    vertical-align: middle;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #4c597c;
+    padding: 12px 24px;
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.other-img {
+    width: 200px;
+    padding: 0 20px;
+    height: 150px;
+}
+
+.empty-div {
+    height: 200px;
+    width: 100%;
+    border-style: solid;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+p {
+    margin-top: 0;
+    color: #616161;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#SignUpForm {
+    text-align: center;
+}
+
+#SignUpForm>div {
+    padding-top: 20px;
+}
+
+#SignUpForm>p>input {
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+    padding-right: 30px;
+}
+
+#SignUpForm>div>button {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 60px;
+    height: 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered a {
+    text-decoration: none;
+}
+
+.scaleup {
+    transition: transform linear 0.2s;
+}
+
+.scaleup:hover {
+    transform: scaleX(1.2);
+    z-index: 10;
+}
+
+.founder_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.7);
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: transform linear 0.2s;
+}
+
+.founder_img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    box-shadow: 8px 8px 8px rgba(200, 200, 200, 0.9);
+}
+
+.payment_button {
+    border-radius: 15px;
+    background-color: #4c597c;
+    width: 25%;
+    margin: auto;
+    height: 55px;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.payment_button a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 35%;
+    justify-content: center;
+}
+
+.payment_img {
+    width: 20%;
+    height: 62%;
+    float: left;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.page_text ul li {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.trading_button {
+    border-radius: 15px;
+    background-color: #4c597c;
+    width: 150px;
+    margin: auto;
+    height: 55px;
+    vertical-align: middle;
+}
+
+.trading_button a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 35%;
+    justify-content: center;
+}
+
+.trading_button input {
+    text-decoration: none;
+    color: white;
+    top: 35%;
+    justify-content: center;
+}
+
+.trading_button a span {
+    margin-right: 5%;
+    float: right;
+    border-radius: 15%;
+}
+
+.blueBG {
+    background-color: #0087f7;
+    border-radius: 5px;
+}
+
+.rightFloating {
+    float: right;
+}
+
+.greenBG {
+    background-color: #3ad069 !important;
+}
+
+.redBG {
+    background-color: #f94b2e !important;
+}
+
+.upDownImg {
+    width: 20%;
+    height: 62%;
+    float: right;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.upDownText {
+    padding-left: 10%;
+}
+
+.upDownBtn {
+    margin-right: 2% !important;
+}
+
+.paymentsBtn {
+    margin-right: 8% !important;
+}
+
+#amountInput {
+    color: white;
+    padding-left: 10px;
+}
+
+#minusBtn {
+    width: 70px !important;
+    height: 30px !important;
+    cursor: pointer;
+}
+
+#plusBtn {
+    width: 70px !important;
+    height: 30px !important;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+div[contenteditable] {
+    width: 75%;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding-left: 14px;
+}
+
+#rightOfPaymentsBtn {
+    width: fit-content;
+    padding: 0 5px;
+}
+
+#trade_container {
+    background: url(Images/large.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-box {
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%);
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.thirty_width {
+    width: 25%;
+}
+
+
+.enrol-button {
+    font-size: 17px;
+    border: none;
+    border-radius: 9px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #002895;
+    padding: 12px 24px;
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    cursor:pointer;
+    transition: transform 0.5s linear;
+}
+
+.enrol-button:hover{
+    background-color: #667292;
+    transform:scaleX(1.1);
+}

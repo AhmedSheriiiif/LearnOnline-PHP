@@ -1,0 +1,64 @@
+Course_1.php --> Details of the course
+--------------
+"SELECT * FROM courses where ID = $id"
+"SELECT * FROM enrollments where Username='$username' and EnrolledCourses='$id'"
+
+// search of the course with the required ID to get all required details about the course
+// to check if the user is already enrolled or not in the course 
+
+Courses.php --> Putting all the courses details and filter them by category
+-----------
+"select DISTINCT Category from courses"
+"SELECT * FROM courses WHERE Category = '$category'"
+
+// first we get all the catorgies we have in the database by using DISTINCT
+// then we extract all the courses in each specific catogry 
+
+
+
+Instructors.php
+-------------------
+"SELECT * FROM instructors"
+
+// getting the information of all the instructors
+
+
+My Courses.php
+---------------
+"SELECT * FROM enrollments where Username = '$username'"
+"SELECT * from courses where ID = '$id'"
+
+// getting all enrollment for the username loggedin 
+// then for each course the user enrolled we get its data
+
+
+My Profile.php
+-------------------
+"SELECT * from users where Username = '$username'"
+
+// to get the data of the user that logged in
+
+
+
+Server.php
+--------------
+"SELECT username from users where username = '$username'"
+// getting the username of the loggedin user from the database
+
+
+
+"INSERT INTO users (Username,FName,LName,Age,Gender,Email,Password) VALUES(?, ?, ?, ?, ?, ?, ?)"   --> register
+// adding to the user database, the information of the registered user 
+
+"SELECT username from users where username = '$username' and password = '$password' "
+// checking the username exist or not and the username and password correct or not
+
+"UPDATE users 
+    SET Email = '$email', Fname = '$fname', Lname='$lname', Password='$password'
+    WHERE Username = '$username'"
+// update users table by setting the new email , first name, last name, password for a the user who loggedin before
+
+
+"INSERT INTO enrollments(Username, EnrolledCourses, DateOfEnroll)
+    VALUES ('$username', '$course_id', '$date')"
+    // to add in the enrollments table the user and the course and the data 
